@@ -1,9 +1,6 @@
 from rest_framework import serializers
-from .models import Item
-from .models import StockMovement
-from .models import Category
-from .models import Supplier
-from .models import Location
+from .models import Item, Category, Supplier, StockMovement, Location
+
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
